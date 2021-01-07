@@ -1,0 +1,29 @@
+
+#,"<span data-id=""PlayerStatsDataGrid_139639178366096"" data-action=""/datagrid/20222/PlayerStatsDataGrid_139639178366096/for"" class=""grid-ajax sort-button"" data-name=""sort"" data-value=""fullname"">Jméno <input type=""text"" name=""gridFilter_fullname"" data-placement=""bottom"" class=""popup-on"" title=""Abc - jakýkoliv výskyt Abc
+Abc* - začíná s Abc
+*Abc - končí s Abc 
+=Abc - přesný výskyt Abc"">","<span data-id=""PlayerStatsDataGrid_139639178366096"" data-action=""/datagrid/20222/PlayerStatsDataGrid_139639178366096/for"" class=""grid-ajax sort-button"" data-name=""sort"" data-value=""team_logo_with_link"">Družstvo","<span data-id=""PlayerStatsDataGrid_139639178366096"" data-action=""/datagrid/20222/PlayerStatsDataGrid_139639178366096/for"" class=""grid-ajax sort-button"" data-name=""sort"" data-value=""post"">Post","<span data-id=""PlayerStatsDataGrid_139639178366096"" data-action=""/datagrid/20222/PlayerStatsDataGrid_139639178366096/for"" class=""grid-ajax sort-button"" data-name=""sort"" data-value=""z"">Z","<span data-id=""PlayerStatsDataGrid_139639178366096"" data-action=""/datagrid/20222/PlayerStatsDataGrid_139639178366096/for"" class=""grid-ajax sort-button"" data-name=""sort"" data-value=""b"">B","<span data-id=""PlayerStatsDataGrid_139639178366096"" data-action=""/datagrid/20222/PlayerStatsDataGrid_139639178366096/for"" class=""grid-ajax sort-button"" data-name=""sort"" data-value=""bvp"">BVP","<span data-id=""PlayerStatsDataGrid_139639178366096"" data-action=""/datagrid/20222/PlayerStatsDataGrid_139639178366096/for"" class=""grid-ajax sort-button"" data-name=""sort"" data-value=""bvo"">BVO","<span data-id=""PlayerStatsDataGrid_139639178366096"" data-action=""/datagrid/20222/PlayerStatsDataGrid_139639178366096/for"" class=""grid-ajax sort-button"" data-name=""sort"" data-value=""a"">A","<span data-id=""PlayerStatsDataGrid_139639178366096"" data-action=""/datagrid/20222/PlayerStatsDataGrid_139639178366096/for"" class=""grid-ajax sort-button"" data-name=""sort"" data-value=""kb"">KB","<span data-id=""PlayerStatsDataGrid_139639178366096"" data-action=""/datagrid/20222/PlayerStatsDataGrid_139639178366096/for"" class=""grid-ajax sort-button"" data-name=""sort"" data-value=""tm"">TM","<span data-id=""PlayerStatsDataGrid_139639178366096"" data-action=""/datagrid/20222/PlayerStatsDataGrid_139639178366096/for"" class=""grid-ajax sort-button"" data-name=""sort"" data-value=""plus_points"">+","<span data-id=""PlayerStatsDataGrid_139639178366096"" data-action=""/datagrid/20222/PlayerStatsDataGrid_139639178366096/for"" class=""grid-ajax sort-button"" data-name=""sort"" data-value=""minus_points"">-","<span data-id=""PlayerStatsDataGrid_139639178366096"" data-action=""/datagrid/20222/PlayerStatsDataGrid_139639178366096/for"" class=""grid-ajax sort-button"" data-name=""sort"" data-value=""plus_minus_points"">+/-"
+1.,Jiří Juhaňák,,U,15,2,2,0,12,14,2,22,27,-5
+2.,Tomáš Brom,,O,15,7,3,1,6,13,4,18,27,-9
+3.,Luděk Ondráček,,U,10,8,3,0,4,12,4,15,14,1
+4.,Martin Nagy,,U,13,8,5,0,3,11,0,6,19,-13
+5.,Adam Hemerka,,,12,7,0,0,4,11,10,17,16,1
+6.,René Slezák,,,12,5,1,0,3,8,4,15,16,-1
+7.,Lukáš Vlach,,,15,5,0,0,2,7,2,7,18,-11
+8.,David Coufal,,U,11,4,0,0,3,7,2,12,23,-11
+9.,David Sládeček,,O,15,1,0,0,5,6,10,18,27,-9
+10.,Marek Fuchs,,U,12,3,0,0,2,5,4,17,19,-2
+11.,Šimon Leško,,,9,1,0,0,2,3,2,2,5,-3
+12.,Matěj Kostka,,O,15,1,1,0,2,3,4,14,16,-2
+13.,Šimon Hronek,,,14,2,0,0,0,2,0,3,15,-12
+14.,Dominik Dvořák,,U,15,0,0,0,2,2,9,14,25,-11
+15.,Vít Máček,,,7,1,0,0,0,1,0,1,2,-1
+16.,Jakub Procházka,,U,12,1,0,0,0,1,2,2,10,-8
+17.,Filip Létal,,G,0,0,0,0,1,1,0,0,0,0
+18.,David Hrazdira,,O,9,0,0,0,1,1,0,3,7,-4
+19.,Filip Kuhn,,G,0,0,0,0,0,0,25,0,0,0
+20.,Jiří Halama,,,12,0,0,0,0,0,6,3,3,0
+21.,Ondřej Kolajta,,,0,0,0,0,0,0,0,0,0,0
+22.,Filip Horák,,O,13,0,0,0,0,0,0,7,21,-14
+23.,Matyáš Kůra,,,13,0,0,0,0,0,4,6,14,-8
+24.,Tomáš Zach,,O,15,0,0,0,0,0,0,1,6,-5
