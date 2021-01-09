@@ -6,8 +6,6 @@ from selenium.webdriver.support import expected_conditions as EC
 
 import pyperclip
 import time
-import os
-import shutil
 
 
 def read_league_table():
@@ -224,7 +222,3 @@ for key in TEAMS_DICT.keys():
     read_team_statistics(key, TEAMS_DICT[key])
 
 driver.quit()
-
-# destination = r'D:\klima\Documents\SKV\pripravy\csv_2021'
-# for file in os.listdir('../csv'):
-#     shutil.copy(os.path.join('../csv', file), destination)
