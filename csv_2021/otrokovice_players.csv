@@ -1,33 +1,28 @@
-
-#,"<span data-id=""PlayerStatsDataGrid_139639083917200"" data-action=""/datagrid/20222/PlayerStatsDataGrid_139639083917200/for"" class=""grid-ajax sort-button"" data-name=""sort"" data-value=""fullname"">Jméno <input type=""text"" name=""gridFilter_fullname"" data-placement=""bottom"" class=""popup-on"" title=""Abc - jakýkoliv výskyt Abc
-Abc* - začíná s Abc
-*Abc - končí s Abc 
-=Abc - přesný výskyt Abc"">","<span data-id=""PlayerStatsDataGrid_139639083917200"" data-action=""/datagrid/20222/PlayerStatsDataGrid_139639083917200/for"" class=""grid-ajax sort-button"" data-name=""sort"" data-value=""team_logo_with_link"">Družstvo","<span data-id=""PlayerStatsDataGrid_139639083917200"" data-action=""/datagrid/20222/PlayerStatsDataGrid_139639083917200/for"" class=""grid-ajax sort-button"" data-name=""sort"" data-value=""post"">Post","<span data-id=""PlayerStatsDataGrid_139639083917200"" data-action=""/datagrid/20222/PlayerStatsDataGrid_139639083917200/for"" class=""grid-ajax sort-button"" data-name=""sort"" data-value=""z"">Z","<span data-id=""PlayerStatsDataGrid_139639083917200"" data-action=""/datagrid/20222/PlayerStatsDataGrid_139639083917200/for"" class=""grid-ajax sort-button"" data-name=""sort"" data-value=""b"">B","<span data-id=""PlayerStatsDataGrid_139639083917200"" data-action=""/datagrid/20222/PlayerStatsDataGrid_139639083917200/for"" class=""grid-ajax sort-button"" data-name=""sort"" data-value=""bvp"">BVP","<span data-id=""PlayerStatsDataGrid_139639083917200"" data-action=""/datagrid/20222/PlayerStatsDataGrid_139639083917200/for"" class=""grid-ajax sort-button"" data-name=""sort"" data-value=""bvo"">BVO","<span data-id=""PlayerStatsDataGrid_139639083917200"" data-action=""/datagrid/20222/PlayerStatsDataGrid_139639083917200/for"" class=""grid-ajax sort-button"" data-name=""sort"" data-value=""a"">A","<span data-id=""PlayerStatsDataGrid_139639083917200"" data-action=""/datagrid/20222/PlayerStatsDataGrid_139639083917200/for"" class=""grid-ajax sort-button"" data-name=""sort"" data-value=""kb"">KB","<span data-id=""PlayerStatsDataGrid_139639083917200"" data-action=""/datagrid/20222/PlayerStatsDataGrid_139639083917200/for"" class=""grid-ajax sort-button"" data-name=""sort"" data-value=""tm"">TM","<span data-id=""PlayerStatsDataGrid_139639083917200"" data-action=""/datagrid/20222/PlayerStatsDataGrid_139639083917200/for"" class=""grid-ajax sort-button"" data-name=""sort"" data-value=""plus_points"">+","<span data-id=""PlayerStatsDataGrid_139639083917200"" data-action=""/datagrid/20222/PlayerStatsDataGrid_139639083917200/for"" class=""grid-ajax sort-button"" data-name=""sort"" data-value=""minus_points"">-","<span data-id=""PlayerStatsDataGrid_139639083917200"" data-action=""/datagrid/20222/PlayerStatsDataGrid_139639083917200/for"" class=""grid-ajax sort-button"" data-name=""sort"" data-value=""plus_minus_points"">+/-"
-1.,Matěj Hronek,,,13,6,0,1,8,14,4,18,25,-7
-2.,František Vykopal,,U,13,7,3,0,5,12,6,12,20,-8
-3.,Filip Hrabal,,U,11,7,0,0,3,10,4,14,22,-8
-4.,Ladislav Gál,,U,10,6,2,0,4,10,2,13,18,-5
-5.,Martin Szweda,,O,13,3,0,0,4,7,8,12,19,-7
-6.,Peter Nehila,,,12,6,0,0,0,6,2,7,13,-6
-7.,Michal Nagy,,O,11,4,0,0,2,6,8,14,22,-8
+1.,Matěj Hronek,,,13,6,0,1,8,14,4,19,28,-9
+2.,František Vykopal,,U,13,7,3,0,5,12,6,12,23,-11
+3.,Filip Hrabal,,U,11,7,0,0,3,10,4,14,24,-10
+4.,Ladislav Gál,,U,10,6,2,0,4,10,2,13,21,-8
+5.,Martin Szweda,,O,13,3,0,0,4,7,8,13,21,-8
+6.,Peter Nehila,,,12,6,0,0,0,6,2,7,14,-7
+7.,Michal Nagy,,O,11,4,0,0,2,6,8,14,26,-12
 8.,Vlastimil Červenka,,U,11,3,0,0,2,5,4,16,22,-6
 9.,Martin Grlický,,U,8,2,0,0,3,5,0,13,12,1
-10.,David Medek,,O,12,2,0,0,3,5,4,19,22,-3
-11.,Lukáš Petřík,,U,13,2,1,0,2,4,0,9,26,-17
-12.,Petr Koláčný,,O,7,1,1,0,3,4,12,6,11,-5
-13.,Lukáš Kvapil,,O,13,1,1,0,3,4,4,15,25,-10
+10.,David Medek,,O,12,2,0,0,3,5,4,20,24,-4
+11.,Lukáš Petřík,,U,13,2,1,0,2,4,0,9,29,-20
+12.,Petr Koláčný,,O,7,1,1,0,3,4,12,6,15,-9
+13.,Lukáš Kvapil,,O,13,1,1,0,3,4,4,15,27,-12
 14.,Pavel Jurčík,,U,9,0,0,0,2,2,2,4,7,-3
 15.,Jan Hrtús,,,13,1,0,0,0,1,2,8,10,-2
-16.,Josef Štourač,,U,9,0,0,0,1,1,2,1,6,-5
-17.,Petr Pšenčík,,O,12,0,0,0,1,1,2,6,18,-12
+16.,Josef Štourač,,U,9,0,0,0,1,1,2,1,7,-6
+17.,Petr Pšenčík,,O,12,0,0,0,1,1,2,6,19,-13
 18.,Ondřej Kahoun,,,1,0,0,0,0,0,0,0,0,0
 19.,Vladimír Blažek,,,1,0,0,0,0,0,0,0,0,0
 20.,Adam Javořík,,,1,0,0,0,0,0,0,0,0,0
-21.,Miroslav Kladivo,,O,2,0,0,0,0,0,0,0,0,0
+21.,Miroslav Kladivo,,O,2,0,0,0,0,0,0,1,2,-1
 22.,Denis Zimmer,,O,2,0,0,0,0,0,0,0,0,0
-23.,Tomáš Sovják,,U,3,0,0,0,0,0,4,0,0,0
+23.,Tomáš Sovják,,U,3,0,0,0,0,0,4,1,2,-1
 24.,Kryštof Hájek,,,3,0,0,0,0,0,4,3,3,0
-25.,Marek Zapletal,,U,4,0,0,0,0,0,0,1,3,-2
+25.,Marek Zapletal,,U,4,0,0,0,0,0,0,1,5,-4
 26.,Zdeněk Raška,,,1,0,0,0,0,0,0,0,0,0
 27.,Matěj Kubíček,,,1,0,0,0,0,0,0,0,1,-1
 28.,Kevin Majrich,,G,0,0,0,0,0,0,0,0,0,0
