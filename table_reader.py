@@ -1,7 +1,8 @@
+import datetime
+import re
+import os
 import requests
 from bs4 import BeautifulSoup
-import re
-import datetime
 
 
 def read_league_table():
@@ -297,15 +298,7 @@ def write_table_to_file(table, filename: str):
     """
     with open(filename, 'w', encoding='utf-8') as f:
         for tr in table.find_all('tr'):
-            s = ''
-            for td in tr.find_all('td'):
-                if ',' in td.text.strip():
-                    s = s + '"' + td.text.strip() + '"'
-                else:
-                    s += td.text.strip()
-                s += ','
-
-            s = s[:-1] + '\n'
+            s = read_cells_in_row(tr)
             f.write(s)
 
 
@@ -320,28 +313,31 @@ def write_best_of_tables_to_file(tables, filename: str):
         for i in range(len(tables)):
             counter = 0
             for tr in tables[i].find_all('tr'):
-                s = ''
-                for td in tr.find_all('td'):
-                    if ',' in td.text.strip():
-                        s = s + '"' + td.text.strip() + '"'
-                    else:
-                        s += td.text.strip()
-                    s += ','
-
-                s = s[:-1] + '\n'
+                s = read_cells_in_row(tr)
                 counter += 1
                 f.write(s)
 
-            for i in range(counter, 5):
+            for j in range(counter, 5):
                 f.write(',,,\n')
 
 
-def format_match(match):
+def read_cells_in_row(row):
     """
-    Formats list of match information into a string
-    :param match:
-    :return:
+    Reads all cells in a given row of some table.
+    :param row: row of HTML table (<c><tr></c>)
+    :return: string with row data
     """
+    s = ''
+    for td in row.find_all('td'):
+        if ',' in td.text.strip():
+            s = s + '"' + td.text.strip() + '"'
+        else:
+            s += td.text.strip()
+        s += ','
+
+    s = s[:-1] + '\n'
+
+    return s
 
 
 def get_team_abbr(team_full_name):
@@ -362,6 +358,10 @@ def main():
     Main function of the script.
     :return: nothing
     """
+    # checks if this year's csv directory exists, if not, creates it
+    if not os.path.exists(f'csv_{SEASON_FIRST_YEAR}{SEASON_SECOND_YEAR}'):
+        os.makedirs(f'csv_{SEASON_FIRST_YEAR}{SEASON_SECOND_YEAR}')
+
     read_league_table()
 
     for team in TEAMS_DICT.keys():
@@ -382,7 +382,6 @@ TEAMS_FULLNAMES = {'VIT': '1. SC TEMPISH Vítkovice', 'MB': 'Předvýběr.CZ Flo
                    'OST': 'FBC ČPP OSTRAVA', 'SPA': 'ACEMA Sparta Praha', 'BA': 'BLACK ANGELS', 'LIB': 'FBC Liberec',
                    'HAT': 'FBŠ Hummel Hattrick Brno', 'CLP': 'FBC 4CLEAN Česká Lípa', 'PAR': 'SOKOLI Pardubice',
                    'OTR': 'Hu-Fa PANTHERS OTROKOVICE', 'SKV': 'TJ Sokol Královské Vinohrady'}
-BEST_OF_ORDER = ['body', 'prumer', 'goly', 'vyhry', 'asistence', 'tm']
 SEASON_FIRST_YEAR = 20
 SEASON_SECOND_YEAR = 21
 
