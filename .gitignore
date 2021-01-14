@@ -1,5 +1,11 @@
+# All logs
 *.log
 
+# Excel file without macros
 priprava_2021.xlsx
 
+# File with passwords to Excel workbook
 .passwd
+
+# A script that is running on NAS station
+.synology_task.sh
