@@ -162,7 +162,8 @@ def process_matches(matches, team):
         match[0] = datetime.date(year, month, day)
 
         if match[0] < today:
-            past.append(match)
+            if match[-1].split(':')[0] != '-':
+                past.append(match)
         elif match[0] > today:
             future.append(match)
 
