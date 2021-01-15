@@ -11,4 +11,4 @@ priprava_2021.xlsx
 .synology_task.sh
 
 # A script that pulls from GitHub to local folder
-.github_pull.ps1
+.github_pull.sh
