@@ -161,10 +161,10 @@ def process_matches(matches, team):
 
         match[0] = datetime.date(year, month, day)
 
-        if match[0] < today:
+        if match[0] <= today:
             if match[-1].split(':')[0] != '-':
                 past.append(match)
-        elif match[0] > today:
+        else:
             future.append(match)
 
     sorted(past, key=lambda record: record[0])
