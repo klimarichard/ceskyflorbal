@@ -25,5 +25,5 @@ will load onto the page.\
 The archive of historic matches on page 4 of the first sheet holds information
 about previously found historic matches between some two teams, so it wouldn't
 be necessary to look them up the next time these two teams meet again. The only
-matches that might not be present in these archives are the ones played later,
-than the latest date of the archived list.
+matches that might not be present in these archives are the ones played earlier,
+than the earliest date of the archived list.
