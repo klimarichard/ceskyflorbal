@@ -130,8 +130,14 @@ def read_team_matches(team):
         with open(f'csv_{SEASON_FIRST_YEAR}{SEASON_SECOND_YEAR}/{team}_zapasy.csv', 'w', encoding='utf-8') as f:
             for match in last_5:
                 f.write(match_to_string(match, team))
+                if len(last_5) < 5:
+                    for i in range(len(last_5), 5):
+                        f.write(',,')
             for match in next_5:
                 f.write(match_to_string(match, team))
+                if len(next_5) < 5:
+                    for i in range(len(next_5), 5):
+                        f.write(',,')
             f.write(streak)
     else:
         print(f'ERROR: Unsuccessful loading of matches page for {team.upper()}!')
