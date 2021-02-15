@@ -257,26 +257,30 @@ def match_to_string(match, team):
     """
     result = f'{match[0].day}. {match[0].month}.,'
 
+    score_split = match[-1].split(':')
+
+    home_score = score_split[0]
+    away_score = score_split[1]
+    p = ''
+    so = ''
+
+    if not away_score.isnumeric():
+        if away_score[-1] == 'p':
+            p = 'p'
+            away_score = int(away_score[:-1])
+        elif away_score[-1] == 'n':
+            so = 'sn'
+            away_score = int(away_score[:-2])
+    else:
+        away_score = int(away_score)
+
     if match[3] == TEAMS_FULLNAMES[team]:
         result += f'{get_abbr_team_name(match[4])},"{match[-1]}"'
+
+        result += f'"{home_score}:{away_score}{p}{so}"'
+
     elif match[4] == TEAMS_FULLNAMES[team]:
         result += f'{get_abbr_team_name(match[3])},'
-        score_split = match[-1].split(':')
-
-        home_score = score_split[0]
-        away_score = score_split[1]
-        p = ''
-        so = ''
-
-        if not away_score.isnumeric():
-            if away_score[-1] == 'p':
-                p = 'p'
-                away_score = int(away_score[:-1])
-            elif away_score[-1] == 'n':
-                so = 'sn'
-                away_score = int(away_score[:-2])
-        else:
-            away_score = int(away_score)
 
         result += f'"{away_score}:{home_score}{p}{so}"'
 
