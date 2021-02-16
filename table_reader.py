@@ -276,7 +276,7 @@ def match_to_string(match, team):
         away_score = int(away_score)
 
     if match[3] == TEAMS_FULLNAMES[team]:
-        result += f'{get_abbr_team_name(match[4])},"{match[-1]}"'
+        result += f'{get_abbr_team_name(match[4])},'
 
         result += f'"{home_score}:{away_score}{p}{so}"'
 
