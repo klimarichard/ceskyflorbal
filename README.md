@@ -9,7 +9,7 @@ data. The data are divided into small files for easier importing to Excel.
 ## `.csv` files
 The files are named according to their content, so that they can be easily
 identified. For example, the file `tabulka.csv` contains the table of the
-league, whereas the file `VIT_matches.csv` contains information about matches
+league, whereas the file `VIT_zapasy.csv` contains information about matches
 of team Vítkovice.
 
 ## Preparations
