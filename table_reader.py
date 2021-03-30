@@ -65,7 +65,7 @@ def read_team_goalies_stats(team: str):
 
     # if opening page was OK
     if page.status_code == 200:
-        print(f"Players stats table page for {team.upper()} opened successfully...")
+        print(f"Goalies stats table page for {team.upper()} opened successfully...")
 
         soup = BeautifulSoup(page.text, 'html.parser')
 
@@ -389,6 +389,8 @@ BASE_URL = r'https://www.ceskyflorbal.cz/druzstvo/'
 TEAMS_DICT = {'VIT': '27231', 'MB': '27929', 'TAT': '26841', 'BOH': '28310', 'CHO': '26151', 'OST': '26682',
               'SPA': '26345', 'BA': '28078', 'LIB': '26709', 'HAT': '27660', 'CLP': '28266', 'PAR': '28194',
               'OTR': '26086', 'SKV': '26475'}
+TEAMS_PLAYOFF_DICT = {'VIT': '27231', 'MB': '27929', 'TAT': '26841', 'BOH': '28310', 'CHO': '26151', 'OST': '26682',
+                      'SPA': '26345', 'BA': '28078'}
 TEAMS_FULLNAMES = {'VIT': '1. SC TEMPISH Vítkovice', 'MB': 'Předvýběr.CZ Florbal MB',
                    'TAT': 'Tatran Teka Střešovice', 'BOH': 'FbŠ Bohemians', 'CHO': 'FAT PIPE FLORBAL CHODOV',
                    'OST': 'FBC ČPP OSTRAVA', 'SPA': 'ACEMA Sparta Praha', 'BA': 'BLACK ANGELS', 'LIB': 'FBC Liberec',
