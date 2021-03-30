@@ -192,7 +192,6 @@ def extract_playoff_stats():
     :return: nothing
     """
     driver = webdriver.Firefox()
-
     print('-------------------------------')
     print('PLAY-OFF STATISTICS:')
 
