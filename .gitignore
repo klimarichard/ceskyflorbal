@@ -9,6 +9,7 @@ priprava_2021.xlsx
 
 # A script that is running on NAS station
 .synology_task.sh
+.synology_task_playoff.sh
 
 # A script that pulls from GitHub to local folder
 .github_pull.sh
