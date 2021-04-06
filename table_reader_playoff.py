@@ -1,7 +1,5 @@
-import datetime
 import re
 import os
-import requests
 from bs4 import BeautifulSoup
 from selenium import webdriver
 from time import sleep
