@@ -22,8 +22,8 @@ In the overview page of the match, select two teams from dropdown menus at
 the top of the page and all information (with the exception of historic matches)
 will load onto the page.\
 \
-The archive of historic matches on page 4 of the first sheet holds information
-about previously found historic matches between some two teams, so it wouldn't
-be necessary to look them up the next time these two teams meet again. The only
-matches that might not be present in these archives are the ones played earlier,
-than the earliest date of the archived list.
+The archive of historic matches on page 4 and 6 of the first sheet holds
+information about previously found historic matches between some two teams, so
+it wouldn't be necessary to look them up the next time these two teams meet
+again. The only matches that might not be present in these archives are the ones
+played earlier, than the earliest date of the archived list.
