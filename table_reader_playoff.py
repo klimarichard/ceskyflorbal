@@ -24,7 +24,7 @@ def read_playoff_table(driver):
 
     table = soup.find('tbody', id=re.compile('^datablock-TeamStatsDataGrid_'))
 
-    with open(f'csv_{SEASON_FIRST_YEAR}{SEASON_SECOND_YEAR}/tabulka_playoff.csv', 'w', encoding='utf-8') as f:
+    with open(f'aktualni/csv/tabulka_playoff.csv', 'w', encoding='utf-8') as f:
         for tr in table.find_all('tr'):
             s = ''
             for td in tr.find_all('td'):
@@ -56,7 +56,7 @@ def read_team_players_playoff_stats(team: str, driver):
 
     table = soup.find('tbody', id=re.compile('^datablock-PlayerStatsDataGrid'))
 
-    write_table_to_file(table, f'csv_{SEASON_FIRST_YEAR}{SEASON_SECOND_YEAR}/{team}_players_playoff.csv')
+    write_table_to_file(table, f'aktualni/csv/{team}_players_playoff.csv')
 
 
 def read_team_goalies_playoff_stats(team: str, driver):
@@ -80,7 +80,7 @@ def read_team_goalies_playoff_stats(team: str, driver):
 
     table = soup.find('tbody', id=re.compile('^datablock-GoalieStatsDataGrid'))
 
-    write_table_to_file(table, f'csv_{SEASON_FIRST_YEAR}{SEASON_SECOND_YEAR}/{team}_goalies_playoff.csv')
+    write_table_to_file(table, f'aktualni/csv/{team}_goalies_playoff.csv')
 
 
 def read_team_bestof_playoff_stats(team, driver):
@@ -104,7 +104,7 @@ def read_team_bestof_playoff_stats(team, driver):
 
     tables = soup.findAll('table', {'class': 'statTable'})
 
-    write_best_of_tables_to_file(tables, f'csv_{SEASON_FIRST_YEAR}{SEASON_SECOND_YEAR}/{team}_bestof_playoff.csv')
+    write_best_of_tables_to_file(tables, f'aktualni/csv/{team}_bestof_playoff.csv')
 
 
 def get_abbr_team_name(team):
@@ -209,27 +209,27 @@ def main():
     Main function of the script.
     :return: nothing
     """
-    # checks if this year's csv directory exists, if not, creates it
-    if not os.path.exists(f'csv_{SEASON_FIRST_YEAR}{SEASON_SECOND_YEAR}'):
-        os.makedirs(f'csv_{SEASON_FIRST_YEAR}{SEASON_SECOND_YEAR}')
+    # checks if current csv directory exists, if not, creates it
+    if not os.path.exists(f'aktualni/csv'):
+        os.makedirs(f'aktualni/csv')
 
     extract_playoff_stats()
 
 
 TABLE = r'https://www.ceskyflorbal.cz/superliga-muzi/tabulka'
 BASE_URL = r'https://www.ceskyflorbal.cz/druzstvo/'
-TEAMS_DICT = {'VIT': '27231', 'MB': '27929', 'TAT': '26841', 'BOH': '28310', 'CHO': '26151', 'OST': '26682',
-              'SPA': '26345', 'BA': '28078', 'LIB': '26709', 'HAT': '27660', 'CLP': '28266', 'PAR': '28194',
-              'OTR': '26086', 'SKV': '26475'}
+TEAMS_DICT = {'VIT': '30499', 'MB': '29996', 'TAT': '29533', 'BOH': '30768', 'CHO': '30856', 'OST': '30324',
+              'SPA': '30593', 'BA': '30982', 'LIB': '29635', 'HAT': '30236', 'CLP': '28896', 'PAR': '30011',
+              'OTR': '29805', 'SKV': '30416'}
 TEAMS_PLAYOFF_DICT = {'VIT': '27231', 'MB': '27929', 'TAT': '26841', 'BOH': '28310', 'CHO': '26151', 'OST': '26682',
                       'SPA': '26345', 'BA': '28078'}
 TEAMS_FULLNAMES = {'VIT': '1. SC TEMPISH Vítkovice', 'MB': 'Předvýběr.CZ Florbal MB',
-                   'TAT': 'Tatran Teka Střešovice', 'BOH': 'FbŠ Bohemians', 'CHO': 'FAT PIPE FLORBAL CHODOV',
+                   'TAT': 'Tatran Střešovice', 'BOH': 'FbŠ Bohemians', 'CHO': 'FAT PIPE FLORBAL CHODOV',
                    'OST': 'FBC ČPP OSTRAVA', 'SPA': 'ACEMA Sparta Praha', 'BA': 'BLACK ANGELS', 'LIB': 'FBC Liberec',
                    'HAT': 'FBŠ Hummel Hattrick Brno', 'CLP': 'FBC 4CLEAN Česká Lípa', 'PAR': 'SOKOLI Pardubice',
-                   'OTR': 'Hu-Fa PANTHERS OTROKOVICE', 'SKV': 'TJ Sokol Královské Vinohrady'}
-SEASON_FIRST_YEAR = 20
-SEASON_SECOND_YEAR = 21
+                   'OTR': 'Navláčil PANTHERS OTROKOVICE', 'SKV': 'TJ Sokol Královské Vinohrady'}
+SEASON_FIRST_YEAR = 21
+SEASON_SECOND_YEAR = 22
 
 if __name__ == '__main__':
     main()
