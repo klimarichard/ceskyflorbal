@@ -9,7 +9,7 @@ data. The data are divided into small files for easier importing to Excel.
 ## `.csv` files
 The files are named according to their content, so that they can be easily
 identified. For example, the file `tabulka.csv` contains the table of the
-league, whereas the file `VIT_zapasy.csv` contains information about matches
+league, whereas the file `VIT_matches.csv` contains information about matches
 of team Vítkovice.
 
 ## Preparations
@@ -19,12 +19,9 @@ players are loaded from data sheets, which had loaded data from `.csv` files
 when the workbook was being opened.\
 \
 In the overview page of the match, select two teams from dropdown menus at
-the top of the page and all information (with the exception of historic matches)
-will load onto the page.\
-\
-The archive of historic matches on page 4 and 6 of the first sheet holds
-information about previously found historic matches between some two teams, so
-it wouldn't be necessary to look them up the next time these two teams meet
-again. The only matches that might not be present in these archives are the ones
-played earlier, than the earliest date of the archived list, or later than the
-latest date of the archived list.
+the top of the page and all information (with the exception of historic
+matches), which are stored in a separate file, will load onto the page.
+
+## Historic matches
+The archive of all historic matches is in a separate file not included in this
+repository because of its size (over 130 MB).
