@@ -21,7 +21,7 @@ def read_league_table():
 
         table = soup.find('tbody', id=re.compile('^datablock-TeamStatsDataGrid_'))
 
-        with open(f'aktualni/csv/tabulka.csv', 'w', encoding='utf-8') as f:
+        with open(f'aktualni/csv/league_table.csv', 'w', encoding='utf-8') as f:
             for tr in table.find_all('tr'):
                 s = ''
                 for td in tr.find_all('td'):
@@ -71,7 +71,7 @@ def read_team_goalies_stats(team: str):
 
         table = soup.find('tbody', id=re.compile('^datablock-GoalieStatsDataGrid'))
 
-        write_table_to_file(table, f'csv_{SEASON_FIRST_YEAR}{SEASON_SECOND_YEAR}/{team}_goalies.csv')
+        write_table_to_file(table, f'aktualni/csv/{team}_goalies.csv')
     else:
         print(f'ERROR: Unsuccessful loading of goalies stats table page for {team.upper()}!')
 
@@ -127,7 +127,7 @@ def read_team_matches(team):
 
         last_5, next_5, streak = process_matches(matches, team)
 
-        with open(f'aktualni/csv/{team}_zapasy.csv', 'w', encoding='utf-8') as f:
+        with open(f'aktualni/csv/{team}_matches.csv', 'w', encoding='utf-8') as f:
             for match in last_5:
                 f.write(match_to_string(match, team))
             if len(last_5) < 5:
