@@ -121,13 +121,12 @@ def read_cells_in_row(row, indexes):
         s += ','
 
     s += extract_player_ID(tds[1])
-
-    s = s[:-1] + '\n'
+    s += '\n'
 
     return s
 
 
-def extract_player_ID(td):
+def extract_player_ID(td) -> str:
     """
     Extract ID part of the link to player page.
     :param td: a cell with the link in it
