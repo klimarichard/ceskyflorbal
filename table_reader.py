@@ -393,7 +393,7 @@ TEAMS_PLAYOFF_DICT = {'VIT': '27231', 'MB': '27929', 'TAT': '26841', 'BOH': '283
                       'SPA': '26345', 'BA': '28078'}
 TEAMS_FULLNAMES = {'VIT': '1. SC TEMPISH Vítkovice', 'MB': 'Předvýběr.CZ Florbal MB',
                    'TAT': 'Tatran Střešovice', 'BOH': 'FbŠ Bohemians', 'CHO': 'FAT PIPE FLORBAL CHODOV',
-                   'OST': 'FBC ČPP OSTRAVA', 'SPA': 'ACEMA Sparta Praha', 'BA': 'BLACK ANGELS', 'LIB': 'FBC Liberec',
+                   'OST': 'FBC ČPP Bystroň Group OSTRAVA', 'SPA': 'ACEMA Sparta Praha', 'BA': 'BLACK ANGELS', 'LIB': 'FBC Liberec',
                    'HAT': 'FBŠ Hummel Hattrick Brno', 'CLP': 'FBC 4CLEAN Česká Lípa', 'PAR': 'SOKOLI Pardubice',
                    'OTR': 'Navláčil PANTHERS OTROKOVICE', 'SKV': 'TJ Sokol Královské Vinohrady'}
 SEASON_FIRST_YEAR = 21
