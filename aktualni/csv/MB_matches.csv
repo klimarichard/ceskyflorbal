@@ -3,9 +3,9 @@
 27. 2.,LIB (d),"4:3"
 26. 2.,LIB (d),"8:3"
 13. 2.,ERROR: Wrong team abbreviation (d),"9:3"
-8. 3.,LIB (d),"-:-"
-10. 3.,LIB (h),"-:-"
-12. 3.,LIB (d),"-:-"
-,,
-,,
+19. 3.,ERROR: Wrong team abbreviation (d),"-:-"
+20. 3.,ERROR: Wrong team abbreviation (d),"-:-"
+26. 3.,ERROR: Wrong team abbreviation (h),"-:-"
+27. 3.,ERROR: Wrong team abbreviation (h),"-:-"
+29. 3.,ERROR: Wrong team abbreviation (d),"-:-"
 V - V - V - V - V - V - V - V - VP - V

@@ -3,9 +3,9 @@
 27. 2.,BA (d),"7:5"
 26. 2.,BA (d),"9:1"
 13. 2.,SPA (h),"8:4"
-8. 3.,BA (d),"-:-"
-10. 3.,BA (h),"-:-"
-13. 3.,BA (d),"-:-"
-,,
-,,
+19. 3.,ERROR: Wrong team abbreviation (d),"-:-"
+20. 3.,ERROR: Wrong team abbreviation (d),"-:-"
+26. 3.,ERROR: Wrong team abbreviation (h),"-:-"
+27. 3.,ERROR: Wrong team abbreviation (h),"-:-"
+29. 3.,ERROR: Wrong team abbreviation (d),"-:-"
 V - V - V - P - V - V - V - V - V - V
