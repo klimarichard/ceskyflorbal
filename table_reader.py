@@ -386,18 +386,18 @@ def main():
 
 TABLE = r'https://www.ceskyflorbal.cz/superliga-muzi/tabulka'
 BASE_URL = r'https://www.ceskyflorbal.cz/druzstvo/'
-TEAMS_DICT = {'VIT': '30499', 'MB': '29996', 'TAT': '29533', 'BOH': '30768', 'CHO': '30856', 'OST': '30324',
-              'SPA': '30593', 'BA': '30982', 'LIB': '29635', 'HAT': '30236', 'CLP': '28896', 'PAR': '30011',
-              'OTR': '29805', 'SKV': '30416'}
+TEAMS_DICT = {'VIT': '33782', 'MB': '33671', 'TAT': '33291', 'BOH': '32987', 'CHO': '32964', 'OST': '32432',
+              'SPA': '32360', 'BA': '33738', 'LIB': '31656', 'HKV': '32291', 'CLP': '33482', 'PAR': '32114',
+              'OTR': '32321', 'SKV': '32015'}
 TEAMS_PLAYOFF_DICT = {'VIT': '27231', 'MB': '27929', 'TAT': '26841', 'BOH': '28310', 'CHO': '26151', 'OST': '26682',
                       'SPA': '26345', 'BA': '28078'}
 TEAMS_FULLNAMES = {'VIT': '1. SC TEMPISH Vítkovice', 'MB': 'Předvýběr.CZ Florbal MB',
                    'TAT': 'Tatran Střešovice', 'BOH': 'FbŠ Bohemians', 'CHO': 'FAT PIPE FLORBAL CHODOV',
                    'OST': 'FBC ČPP Bystroň Group OSTRAVA', 'SPA': 'ACEMA Sparta Praha', 'BA': 'BLACK ANGELS', 'LIB': 'FBC Liberec',
-                   'HAT': 'FBŠ Hummel Hattrick Brno', 'CLP': 'FBC 4CLEAN Česká Lípa', 'PAR': 'SOKOLI Pardubice',
-                   'OTR': 'Navláčil PANTHERS OTROKOVICE', 'SKV': 'TJ Sokol Královské Vinohrady'}
-SEASON_FIRST_YEAR = 21
-SEASON_SECOND_YEAR = 22
+                   'HKV': 'FB Hurrican Karlovy Vary', 'CLP': 'FBC 4CLEAN Česká Lípa', 'PAR': 'SOKOLI Pardubice',
+                   'OTR': 'PSG PANTHERS OTROKOVICE', 'SKV': 'TJ Sokol Královské Vinohrady'}
+SEASON_FIRST_YEAR = 22
+SEASON_SECOND_YEAR = 23
 
 if __name__ == '__main__':
     main()
