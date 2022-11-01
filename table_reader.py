@@ -3,35 +3,7 @@ import re
 import os
 import requests
 from bs4 import BeautifulSoup
-
-
-def read_league_table():
-    """
-    Reads league team stats.
-    :return: nothing
-    """
-    url = TABLE
-    page = requests.get(url)
-
-    # if opening the page was OK
-    if page.status_code == 200:
-        print("League table page opened successfully...")
-
-        soup = BeautifulSoup(page.text, 'html.parser')
-
-        table = soup.find('tbody', id=re.compile('^datablock-TeamStatsDataGrid_'))
-
-        with open(f'aktualni/csv/league_table.csv', 'w', encoding='utf-8') as f:
-            for tr in table.find_all('tr'):
-                s = ''
-                for td in tr.find_all('td'):
-                    s += td.text.strip()
-                    s += ','
-
-                s = s[:-1] + '\n'
-                f.write(s)
-    else:
-        print(f'ERROR: Unsuccessful loading of league table page!')
+from czflo.read import read_league_table_old
 
 
 def read_team_players_stats(team: str):
@@ -374,7 +346,7 @@ def main():
     if not os.path.exists(f'aktualni/csv'):
         os.makedirs(f'aktualni/csv')
 
-    read_league_table()
+    read_league_table_old(TABLE)
 
     for team in TEAMS_DICT.keys():
         print('-------------------------------')
