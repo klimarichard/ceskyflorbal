@@ -5,9 +5,10 @@ from bs4 import BeautifulSoup
 
 def read_league_table_old(tbl: str):
     """
-    Reads league team stats.
     !! WARNING !! This function is deprecated since October 2022 when
     Český florbal released a new website.
+
+    Reads league team stats.
     :param tbl: URL with table location
     :return: nothing
     """
